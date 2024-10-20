@@ -1,13 +1,17 @@
 package org.mochica.AppDelivery.Service;
 
-import org.mochica.AppDelivery.Repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.mochica.AppDelivery.DTO.RegisterDTO;
 
-@Service
-public class UserService {
+import java.util.List;
 
-    @Autowired
-    private UserRepository userRepository;
+public interface UserService {
+
+    List<RegisterDTO> list();
+
+    Boolean add(RegisterDTO registerDTO);
+    Boolean update(Long id, RegisterDTO registerDTO);
+    Boolean delete(Long id, RegisterDTO registerDTO);
+
+
 
 }
