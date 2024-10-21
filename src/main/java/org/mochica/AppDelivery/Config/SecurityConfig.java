@@ -37,6 +37,7 @@ public class SecurityConfig  {
 
         httpSecurity
                 .csrf(AbstractHttpConfigurer::disable)  // Desactivar CSRF, ya que usamos JWT
+
                 .authorizeHttpRequests((requests) ->
                         requests
                                 .requestMatchers("/user/register", "/user/login").permitAll()  // Permitir el registro y login sin autenticación
