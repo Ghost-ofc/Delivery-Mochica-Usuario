@@ -1,4 +1,4 @@
-package org.mopchica.AppAdelivery;
+package org.mochica.AppAdelivery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
