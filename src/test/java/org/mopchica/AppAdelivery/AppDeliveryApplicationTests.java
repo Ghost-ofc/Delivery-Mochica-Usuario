@@ -1,4 +1,4 @@
-package org.mochica.AppDelivery;
+package org.mopchica.AppAdelivery;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
